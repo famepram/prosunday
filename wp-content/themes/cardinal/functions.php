@@ -340,5 +340,8 @@
 		    function is_embed() { return false; }
 		}
 	}
+
+	wp_enqueue_style ('theme-style', get_template_directory_uri().'/css/style.css');
+	wp_enqueue_style ('fmy-style', get_template_directory_uri().'/css/fmy-style.css', array('theme-style'));
 	
 ?>
